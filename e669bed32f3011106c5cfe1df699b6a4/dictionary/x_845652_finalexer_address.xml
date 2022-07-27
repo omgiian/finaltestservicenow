@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Address" max_length="40" name="x_845652_finalexer_address" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="alpha-2 country code" max_length="40" name="alpha_2_country_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" type="string"/>
+        <element attributes="encode_utf8=false" label="Country" mandatory="true" max_length="32" name="country" reference="x_845652_finalexer_country" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Latitude" max_length="40" name="latitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Longitude" max_length="40" name="longitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number 2" max_length="40" name="number_2" type="string"/>
+        <element label="Postal Code" max_length="40" name="postal_code" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Street" max_length="40" name="street" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>

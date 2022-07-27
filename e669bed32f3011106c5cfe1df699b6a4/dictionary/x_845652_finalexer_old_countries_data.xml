@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Old Countries Data" max_length="40" name="x_845652_finalexer_old_countries_data" sizeclass="249" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=alpha-2" label="alpha-2" max_length="40" name="u_alpha_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=alpha-3" label="alpha-3" max_length="40" name="u_alpha_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=country-code" label="country-code" max_length="40" name="u_country_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=intermediate-region" label="intermediate-region" max_length="40" name="u_intermediate_region" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=intermediate-region-code" label="intermediate-region-code" max_length="40" name="u_intermediate_region_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=iso_3166-2" label="iso_3166-2" max_length="40" name="u_iso_3166_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="52" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=region" label="region" max_length="40" name="u_region" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=region-code" label="region-code" max_length="40" name="u_region_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sub-region" label="sub-region" max_length="40" name="u_sub_region" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sub-region-code" label="sub-region-code" max_length="40" name="u_sub_region_code" type="string"/>
+    </element>
+</database>

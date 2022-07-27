@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Product" max_length="40" name="x_845652_finalexer_product" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hardware" value="hardware"/>
+                <element inactive_on_update="false" label="Other" value="other"/>
+                <element inactive_on_update="false" label="Service" value="service"/>
+                <element inactive_on_update="false" label="Software" value="software"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="300" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="140" name="other" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="price" type="price"/>
+        <element attributes="edge_encryption_enabled=true" label="Product Image 1" max_length="1024" name="product_image_1" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Product Image 2" max_length="1024" name="product_image_2" type="url"/>
+    </element>
+</database>

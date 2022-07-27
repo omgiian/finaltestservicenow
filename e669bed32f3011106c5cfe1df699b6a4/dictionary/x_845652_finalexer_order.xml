@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Order" max_length="40" name="x_845652_finalexer_order" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
+        <element attributes="encode_utf8=false" label="Customer" max_length="32" name="customer" reference="sys_user" type="reference"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Final price" max_length="20" name="final_price" type="price"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Order Line" max_length="32" name="order_line" reference="x_845652_finalexer_order_line" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+                <element inactive_on_update="false" label="In-progress" value="in_progress"/>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+                <element inactive_on_update="false" label="Requested" value="requested"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="order_line"/>
+        </index>
+        <index name="index2">
+            <element name="customer"/>
+        </index>
+    </element>
+</database>

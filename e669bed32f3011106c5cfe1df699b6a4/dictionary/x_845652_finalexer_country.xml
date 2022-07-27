@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Country" max_length="40" name="x_845652_finalexer_country" sizeclass="249" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="alpha-2" max_length="40" name="alpha_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="alpha-3" max_length="40" name="alpha_3" type="string"/>
+        <element label="country-code" max_length="40" name="country_code" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="intermediate-region" max_length="40" name="intermediate_region" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="intermediate-region-code" max_length="40" name="intermediate_region_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="iso_3166-2" max_length="40" name="iso_3166_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Region" max_length="40" name="region" type="string"/>
+        <element label="region-code" max_length="40" name="region_code" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="sub-region" max_length="40" name="sub_region" type="string"/>
+        <element label="sub-region-code" max_length="40" name="sub_region_code" type="integer"/>
+    </element>
+</database>
